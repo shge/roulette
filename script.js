@@ -1,7 +1,26 @@
 $(function() {
 
-// Header
-$('#nav').load('../nav.html?201804062022');
+var stage = new Konva.Stage({
+  container: 'canvas',   // id of container <div>
+  width: 500,
+  height: 500
+});
+
+var layer = new Konva.Layer();
+
+var circle = new Konva.Circle({
+  x: stage.getWidth() / 2,
+  y: stage.getHeight() / 2,
+  radius: 200,
+  fill: 'red',
+  stroke: 'black',
+  strokeWidth: 4
+});
+
+layer.add(circle);
+stage.add(layer);
+
+/////////////////////////////////////////////////
 
 $('#start').on('click', function() {
 

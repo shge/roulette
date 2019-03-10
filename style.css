@@ -1,3 +1,7 @@
 .textarea {
+  margin-top: 15px;
   height: 20rem;
+}
+#output {
+  font-size: 8rem;
 }
